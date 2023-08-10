@@ -9,4 +9,4 @@ Topics
 ## dp
 ---
 -algos
--[Hoffman Coding]()
+-[Hoffman Coding](https://github.com/LaPulgaaa/java-algos/blob/master/greedy/Hoffman%20coding.java)
