@@ -1,0 +1,49 @@
+class Decode
+{
+    static int i;
+    static String ret;
+    static String decodeHuffmanData(MinHeapNode root, String str)
+    {
+        i=0;
+        ret="";
+        while(i<=str.length()-1)
+        {
+            traversal(root,str);
+            
+        }
+        return ret;
+    }
+    public static void traversal(MinHeapNode root,String str)
+    {
+        if(root.data!='$')
+        {
+            ret=ret+root.data;
+            return ;
+        }
+        
+        if(str.charAt(i)=='0')
+        {
+            i++;
+             traversal(root.left,str);
+        }
+        else
+        {
+            i++;
+             traversal(root.right,str);
+        }
+    }
+}
+
+//user template for MinHeapNode class
+/*class MinHeapNode
+{
+    char data;
+    int freq;
+    MinHeapNode left, right, top;
+    MinHeapNode(char c, int freq)
+    {
+        left = right = null;
+        this.data = c;
+        this.freq = freq;
+    }
+}*/
